@@ -1,0 +1,54 @@
+Nom       : Foucher
+Prénom    : Nathan
+Groupe TP : 1-SN-C
+
+Les « ... » indiquent les endroits à compléter.
+
+=====[ Temps passé ]============================================================
+
+Ces informations de temps sont demandées à titre indicatif et ne sont pas
+prises en compte dans la notation du projet.
+
+
+* Temps passé sur la V1 : 24 heures ... minutes
+* Temps passé sur la V2 : 10 heures ... minutes
+
+Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
+
+
+=====[ Questions ]==============================================================
+
+--------------------------------------------------------------------------------
+Pourquoi l'exception OperationInterditeException ne peut pas être définie
+comme vérifiée par le compilateur ?
+--------------------------------------------------------------------------------
+L'exception est de type runtime exception car le compilateur ne peut pas savoir 
+en avance si une opération est interdite (triche du joueur) avant que le jeu 
+ne soit lancé (ce qui parait logique).
+
+--------------------------------------------------------------------------------
+Expliquer ce qu'il faut faire pour ajouter un nouveau niveau de jeu, par
+exemple la stratégie lente (C13).  Pour plus de précision, on numérotera
+les étapes à faire.
+--------------------------------------------------------------------------------
+1) Créer une classe Lente qui contient l'appelle getPrise()
+2) Modifier Jouer pour definir la classe Lente à un joueur si l'argument "lente" est présent
+
+--------------------------------------------------------------------------------
+Expliquer ce qui permet, dans votre conception, de changer dynamiquement
+(en cours d'exécution du programme) la stratégie d'un joueur (C14).
+--------------------------------------------------------------------------------
+Comme les stratégie sont gérées par des classes il suffit en cours de partie de changer la classe stratégie associée à un joueur
+avec un appel à joueur.setStrategie.
+
+
+=====[ Explications ]===========================================================
+
+--------------------------------------------------------------------------------
+Donner ici les explications supplémentaires utiles à la compréhension du
+travail rendu.
+--------------------------------------------------------------------------------
+
+...
+
+--------------------------------------------------------------------------------
